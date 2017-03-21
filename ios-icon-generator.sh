@@ -52,7 +52,7 @@ DESCRIPTION:
     dstpath - The destination path where the icons generate to.
 
     This script is depend on ImageMagick. So you must install ImageMagick first
-    You can use 'sudo brew install ImageMagick' to install it
+    You can use 'brew install ImageMagick' to install it
 
 AUTHOR:
     Pawpaw<lvyexuwenfa100@126.com>
@@ -136,5 +136,15 @@ info 'Generate Icon-50.png ...'
 convert "$SRC_FILE" -resize 50x50 "$DST_PATH/Icon-50.png"
 info 'Generate Icon-50@2x.png ...'
 convert "$SRC_FILE" -resize 100x100 "$DST_PATH/Icon-50@2x.png"
+
+info 'Generate WatchIcon-24@2x.png ...'
+convert "$SRC_FILE" -resize 48x48 "$DST_PATH/WatchIcon-24@2x.png"
+info 'Generate WatchIcon-27.5@2x.png ...'
+convert "$SRC_FILE" -resize 55x55 "$DST_PATH/WatchIcon-27.5@2x.png"
+
+info 'Generate WatchIcon-86@2x.png ...'
+convert "$SRC_FILE" -resize 172x172 "$DST_PATH/WatchIcon-86@2x.png"
+info 'Generate WatchIcon-98@2x.png ...'
+convert "$SRC_FILE" -resize 196x196 "$DST_PATH/WatchIcon-98@2x.png"
 
 info 'Generate Done.'

@@ -3,6 +3,9 @@
 ios-icon-generator is a shell script which aim to generate iOS APP icons easier and simply.
 ![image](ios-icon-generator.gif)
 
+### Check for alpha 
+`identify -format '%[channels]' file` should not contain 'a'
+
 ### Usage
 1. Install ImageMagick
 	
